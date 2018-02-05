@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+
+	<style type="text/css" media="screen">
+	.mystyle {
+    font-size: 15px;
+    background-color: white;
+	 }
+	 .bodyClass
+	 {
+	 	background-color: #d1e1fc;
+	 }
+		
+	</style>
+	<script  type="text/javascript" charset="utf-8" async defer>
+		function myFunction(elementID) {
+		    var x = document.getElementById(elementID);
+		    if (x.style.display === "none") {
+		        x.style.display = "block";} 
+		    else {
+		        x.style.display = "none";
+		    }
+		}
+	</script>
+</head>
+<body class ='bodyClass' >
+	<div class="container">
+			<table class = "table table-hover table-condensed">
+				<caption>table index generates every day</caption>
+				<thead>
+					<tr>
+						<th>VIP Name</th> <th>VIP IP</th><th>Device and Partition</th>
+					</tr>
+				</thead>
+
+
+
+
+
+
+<tr class="mystyle" onclick="myFunction('id7')"><td> <img src="http://wfarm3.dataknet.com/static/resources/icons/set1/a947bd4c2806.png" height="12" width="12"> dev.xyz.com_443</td><td>172.16.132.187%1806:443</td><td>host-lb1a-nonprod/app-dev</td></tr><tr id='id7' style='display:none'><td>--VIP<br>VIP Name : dev.xyz.com_443<br>VIP Address : /app-dev/172.16.132.187%1806:443 tcp<br>Address Mask : 255.255.255.255<br>sourceAddressTranslation : {u'type': u'automap'}<br>translateAddress : enabled<br>translatePort : enabled<br>--Profiles<br>Profile : tcp<br>Profile : dev.xyz.com_443.profile.clientssl<br>Profile : dev.xyz.com_443.profile.http<br>--Pool<br>Pool Name : dev.xyz.com_443.pool<br>load Balancing Mode : least-sessions<br>Health Monitor : /app-dev/dev.xyz.com-http.probe <br>--members<br><img src="http://icons.iconarchive.com/icons/hopstarter/scrap/256/Aqua-Ball-Green-icon.png" height="12" width="12"> name:COBUT001-137:8080 address: 172.16.132.137%1806 monitor: default<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Nuvola_apps_krec.svg/2000px-Nuvola_apps_krec.svg.png"  height="12" width="12"> name:COBUT002-144:8080 address: 172.16.132.144%1806 monitor: default<br>--policies<br>iRules : [u'/app-dev/Strip_XForwarded_Prepend']<br></td> </tr>
+
+
+
+
+<tr class="mystyle" onclick="myFunction('id8')"><td><img src="http://downloadicons.net/sites/default/files/square-crystal-style-button-icon-32178.png" height="12" width="12"> dev.xyz.com_443</td><td>172.16.233.16:443</td><td>host-lb1a-nonprod/www-dev</td></tr><tr id='id8' style='display:none'><td>--VIP<br>VIP Name : dev.xyz.com_443<br>VIP Address : /www-dev/172.16.233.16:443 tcp<br>Address Mask : 255.255.255.255<br>sourceAddressTranslation : {u'type': u'automap'}<br>translateAddress : enabled<br>translatePort : enabled<br>--Profiles<br>Profile : dev.xyz.com_443.profile.http<br>Profile : dev.xyz.com_443.profile.tcp<br>Profile : ssl-proxy-dev.xyz.com.profile.clientssl<br>--Pool<br>Pool Name : dev.xyz.com_443.pool<br>load Balancing Mode : least-connections-node<br>Health Monitor : /Common/dev.xyz.com-http.probe <br>--members<br>member name: Site-172.16.132.5:80 address: 172.16.132.5%202 status: up monitor: default<br>member name: Site-172.16.132.6:80 address: 172.16.132.6%202 status: up monitor: default<br>--policies<br>iRules : [u'/www-dev/Strip_XForwarded_Prepend', u'/www-dev/remote-syslog-www-dev', u'/Common/BLOCK_JBOSS_URL.irule']<br></td> </tr>
+
+</table>
+</div>
+</body>
+</html>
+
+
+
