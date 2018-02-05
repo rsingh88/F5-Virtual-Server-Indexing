@@ -39,6 +39,8 @@ Outcome:
 
 "test.html" is attached which shows how the final outcome will look like.
 
+download and open test.html file hover mouse to table rows or click to see the config
+
 
 
 
