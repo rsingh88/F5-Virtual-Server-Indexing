@@ -12,24 +12,28 @@ Pre-requisite:
 1.) You need to have python2.7 version 
 
 2.) You need to install f5-sdk module in your python. 
+
       pip install f5-sdk 
       or follow : https://pypi.python.org/pypi/f5-sdk/  or https://github.com/F5Networks/f5-common-python
 
-3.) You need download "device_list.txt" and keep it in the same directory where you copy "indexLatest.py". 
+3.) Create a text file and name it "device_list.txt" and keep it in the same directory where you copy "indexLatest.py". 
 
 4.) "device_list.txt" open this file and copy mgmt ip/ltm-system-name(if dns works for you) in the file.
+      
       e.g   10.10.10.10
             20.20.20.20
             30.30.30.30
 
 
-5.) Download and Unpack "required.zip" file in the same directory where you have "indexLatest.py". Zip file contains ".png" files 
-    which will be used to show virtual servers and members status in green,blue or red.
+5.) Download and Unpack "required.zip" file in the same directory where you have "indexLatest.py". Zip file contains ".png" files which will be used to show virtual servers and members status in green,blue or red.
  
 6.) You will have to change the file path as per your desired location, code line number54 
-    for example VipFile = open("filePath/fileName.html","wa")
+    
+    for eg
+    VipFile = open("filePath/fileName.html","wa")
 
 7.) You are ready now, indexLatest.py needs to run with admin/pwd as commond line argument
+    
     for eg. 
       python indexLatest.py admin abc@123
  
